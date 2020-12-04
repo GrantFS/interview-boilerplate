@@ -7,5 +7,5 @@ export function fizzBuzz(n:number): string {
     if (n % 5 === 0) {
         result += 'Buzz';
     }
-    return result;
+    return result == '' ? ''+n : result;
 }
