@@ -1,3 +1,7 @@
 export function fizzBuzz(n:number): string {
-    return '1';
+    if(n % 3 === 0) {
+        return 'fizz';
+    }
+    return ''+n;
+
 }
