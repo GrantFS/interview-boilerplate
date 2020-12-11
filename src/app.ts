@@ -1,11 +1,13 @@
 export function fizzBuzz(n:number): string {
-    if (n % 3 === 0 && n % 5 === 0) {
+    const isMultipleOf5 = n % 5 === 0;
+    const isMultipleOf3 = n % 3 === 0;
+    if (isMultipleOf3 && isMultipleOf5) {
         return 'FizzBuzz';
     }
-    if (n % 3 === 0) {
+    if (isMultipleOf3) {
         return 'Fizz';
     }
-    if (n % 5 === 0) {
+    if (isMultipleOf5) {
         return 'Buzz';
     }
     return ''+n;
