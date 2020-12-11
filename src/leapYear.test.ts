@@ -1,5 +1,5 @@
 function isLeapYear(s: number): boolean {
-    if (s === 2000 || s === 2400) {
+    if (s % 400 === 0) {
         return true;
     }
     if (s % 100 === 0) {
@@ -43,6 +43,13 @@ describe('leapYear', () => {
 
     it('should be divisible by 400', () => {
         expect(isLeapYear(2800)).toBe(true);
+    });
+
+    it('is a leap year', () => {
+        expect(isLeapYear(2020)).toBe(true);
+    });
+    it('is not leap year', () => {
+        expect(isLeapYear(2021)).toBe(false);
     });
 });
 
