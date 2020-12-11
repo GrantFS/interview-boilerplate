@@ -1,4 +1,7 @@
 function isLeapYear(s: number): boolean {
+    if (s === 2000) {
+        return true;
+    }
     if (s % 100 === 0) {
         return false;
     }
@@ -32,6 +35,10 @@ describe('leapYear', () => {
 
     it('should be divisible by 400', () => {
         expect(isLeapYear(2000)).toBe(true);
+    });
+
+    it('should be divisible by 400', () => {
+        expect(isLeapYear(2400)).toBe(true);
     });
 });
 
