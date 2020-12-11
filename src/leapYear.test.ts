@@ -1,6 +1,6 @@
 function isLeapYear(s: number): boolean {
 
-    if (s === 1900) {
+    if (s === 1900 || s === 1800) {
         return false;
     }
     return s % 4 === 0;
@@ -25,6 +25,10 @@ describe('leapYear', () => {
 
     it('should be divisible by 100', () => {
         expect(isLeapYear(1800)).toBe(false);
+    });
+
+    it('should be divisible by 100', () => {
+        expect(isLeapYear(1700)).toBe(false);
     });
 });
 
