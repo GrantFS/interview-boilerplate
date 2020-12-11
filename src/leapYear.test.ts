@@ -22,6 +22,10 @@ describe('leapYear', () => {
     it('should be divisible by 100', () => {
         expect(isLeapYear(1900)).toBe(false);
     });
+
+    it('should be divisible by 100', () => {
+        expect(isLeapYear(1800)).toBe(false);
+    });
 });
 
 // Write a function that returns true or false depending on
