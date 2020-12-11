@@ -1,6 +1,6 @@
 function isLeapYear(s: number): boolean {
 
-    if (s === 1900 || s === 1800) {
+    if (s === 1900 || s === 1800 || s === 1700) {
         return false;
     }
     return s % 4 === 0;
