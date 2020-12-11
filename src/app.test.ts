@@ -28,8 +28,8 @@ describe('first test', () => {
         expect(fizzBuzz(10)).toBe('Buzz');
     });
 
-    it('return Buzz when the number 15 is processed', () => {
-        expect(fizzBuzz(15)).toBe('Buzz');
+    it('return Buzz when the number 20 is processed', () => {
+        expect(fizzBuzz(20)).toBe('Buzz');
     });
 });
 
