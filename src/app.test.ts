@@ -19,5 +19,9 @@ describe('first test', () => {
     it('return Fizz when the number 9 is processed', () => {
         expect(fizzBuzz(9)).toBe('Fizz');
     });
+
+    it('return Buzz when the number 5 is processed', () => {
+        expect(fizzBuzz(5)).toBe('Buzz');
+    });
 });
 
