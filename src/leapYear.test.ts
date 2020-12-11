@@ -10,6 +10,10 @@ describe('leapYear', () => {
     it('should be true for 1992', () => {
         expect(isLeapYear(1992)).toBe(true);
     });
+
+    it('should be true for 1988', () => {
+        expect(isLeapYear(1988)).toBe(true);
+    });
 });
 
 // Write a function that returns true or false depending on
