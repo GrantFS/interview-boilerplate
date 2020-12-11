@@ -1,11 +1,8 @@
 export function fizzBuzz(n:number): string {
-    if (n === 15) {
-        return 'Buzz';
-    }
     if (n % 3 === 0) {
         return 'Fizz';
     }
-    if (n === 5 || n === 10) {
+    if (n % 5 === 0) {
         return 'Buzz';
     }
     return ''+n;
