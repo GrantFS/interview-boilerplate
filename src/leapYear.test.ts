@@ -3,11 +3,11 @@ function isLeapYear(s: number): boolean {
 }
 
 describe('leapYear', () => {
-    it('is 1996', () => {
+    it('should be true for 1996', () => {
         expect(isLeapYear(1996)).toBe(true);
     });
 
-    it('is divisible by 4', () => {
+    it('should be true for 1992', () => {
         expect(isLeapYear(1992)).toBe(true);
     });
 });
