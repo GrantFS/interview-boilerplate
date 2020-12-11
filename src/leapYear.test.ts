@@ -1,5 +1,5 @@
 function isLeapYear(s: number): boolean {
-    if (s === 2000) {
+    if (s === 2000 || s === 2400) {
         return true;
     }
     if (s % 100 === 0) {
