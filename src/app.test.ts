@@ -35,5 +35,9 @@ describe('first test', () => {
     it('return FizzBuzz when the number 15 is processed', () => {
         expect(fizzBuzz(15)).toBe('FizzBuzz');
     });
+
+    it('return FizzBuzz when the number 30 is processed', () => {
+        expect(fizzBuzz(30)).toBe('FizzBuzz');
+    });
 });
 
