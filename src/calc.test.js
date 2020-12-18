@@ -17,5 +17,7 @@ describe('Simple Calculator', () => {
 });
 
 function Add(numbers) {
-    return numbers.split(',').reduce((acc, current) => acc+Number(current), 0);
+    const numbersSplitted = numbers.split(',');
+
+    return Number(numbersSplitted[0]) + Number(numbersSplitted[1]);
 }
