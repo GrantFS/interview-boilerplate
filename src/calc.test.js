@@ -10,6 +10,10 @@ describe('Simple Calculator', () => {
     it('accepts multiple numbers as strings', () => {
         expect(Add('1,2')).toBe(3);
     });
+
+    it('accepts an empty string', () => {
+        expect(Add('')).toBe(0);
+    });
 });
 
 function Add(numbers) {
