@@ -1,0 +1,7 @@
+describe('Simple Calciulator', () => {
+    it('accept a string of numbers', () => {
+        expect(Add('1')).toBe(1);
+    });
+});
+
+
