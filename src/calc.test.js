@@ -14,6 +14,10 @@ describe('Simple Calculator', () => {
     it('accepts an empty string', () => {
         expect(Add('')).toBe(0);
     });
+
+    it('accepts unknown amount of numbers', () => {
+        expect(Add('1,2,3')).toBe(6);
+    });
 });
 
 function Add(numbers) {
