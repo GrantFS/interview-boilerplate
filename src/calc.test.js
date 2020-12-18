@@ -1,9 +1,9 @@
 describe('Simple Calculator', () => {
-    it('accept a string of numbers', () => {
+    it('accept number as a string', () => {
         expect(Add('1')).toBe(1);
     });
 
-    it('accept a string of numbers', () => {
+    it('accept number as a string', () => {
         expect(Add('2')).toBe(2);
     });
 
