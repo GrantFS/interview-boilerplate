@@ -9,5 +9,5 @@ describe('Simple Calculator', () => {
 });
 
 function Add(numbers) {
-    return 1;
+    return Number(numbers);
 }
