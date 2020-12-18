@@ -25,7 +25,7 @@ describe('Simple Calculator', () => {
 });
 
 function Add(numbers) {
-    const numbersSplitted = numbers.split(',');
+    const numbersSplitted = numbers.replace('\n', ',').split(',');
     let total = 0;
 
     for(let i=0; i < numbersSplitted.length; i++) {
