@@ -22,16 +22,10 @@ describe('Simple Calculator', () => {
 
 function Add(numbers) {
     const numbersSplitted = numbers.split(',');
-    let total =0;
+    let total = 0;
 
     for(let i=0; i < numbersSplitted.length; i++) {
         total += Number(numbersSplitted[i]);
     }
     return total;
-
-    if (numbersSplitted[1]) {
-        return Number(numbersSplitted[0]) + Number(numbersSplitted[1]);
-    }
-
-    return Number(numbersSplitted[0]);
 }
