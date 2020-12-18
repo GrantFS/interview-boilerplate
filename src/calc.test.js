@@ -29,7 +29,10 @@ describe('Simple Calculator', () => {
 });
 
 function Add(numbers) {
-    return numbers.replace('\n', ',')
+    if(numbers.indexOf(',\n') == -1) {
+        return numbers.replace('\n', ',')
         .split(',')
         .reduce((acc, currentValue) => acc += Number(currentValue), 0);
+    }
+    return NaN;
 }
