@@ -18,6 +18,10 @@ describe('Simple Calculator', () => {
     it('accepts unknown amount of numbers', () => {
         expect(Add('1,2,3')).toBe(6);
     });
+
+    it('accepts multiple numbers in new lines', () => {
+        expect(Add('1\n2,3')).toBe(6);
+    });
 });
 
 function Add(numbers) {
