@@ -22,6 +22,10 @@ describe('Simple Calculator', () => {
     it('accepts multiple numbers in new lines', () => {
         expect(Add('1\n2,3')).toBe(6);
     });
+
+    it('Does not accept a comma next to a new line', () => {
+        expect(Add('1,\n')).toBe(NaN);
+    });
 });
 
 function Add(numbers) {
