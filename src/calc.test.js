@@ -19,9 +19,9 @@ describe('Simple Calculator', () => {
 function Add(numbers) {
     const numbersSplitted = numbers.split(',');
 
-    if(numbersSplitted[1]) {
+    if (numbersSplitted[1]) {
         return Number(numbersSplitted[0]) + Number(numbersSplitted[1]);
-    } else {
-        return Number(numbersSplitted[0]);
     }
+
+    return Number(numbersSplitted[0]);
 }
