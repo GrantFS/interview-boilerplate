@@ -1,7 +1,11 @@
 describe('Overall name', () => {
-    it('test', () => {
+    it('get 1 in roman', () => {
         expect(toRoman(1)).toBe('I');
     });
+
+    it('get 2 in roman', () => {
+        expect(toRoman(2)).toBe('II');
+    })
 });
 
 function toRoman(number: number) : string {
@@ -12,7 +16,8 @@ function toRoman(number: number) : string {
 
 Given a positive integer number write a function returning its Roman numeral representation as a String.
 Examples:
-1=> I			20=> XX			300=> CCC
+1=> I			20=> XX			300=> CCCen7#bands
+
 2=> II			30=> XXX			400=> CD
 3=> III		40=> XL			500=> D
 4=> IV		50=> L			600=> DC
