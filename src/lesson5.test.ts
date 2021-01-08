@@ -1,10 +1,10 @@
 describe('Overall name', () => {
     it('test', () => {
-        expect(toRoman()).toBe('I');
+        expect(toRoman(1)).toBe('I');
     });
 });
 
-function toRoman() {
+function toRoman(number: number) : string {
     return 'I';
 }
 
